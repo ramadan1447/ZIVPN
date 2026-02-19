@@ -29,7 +29,7 @@
 Jalankan perintah berikut di terminal VPS Anda (sebagai root):
 
 ```bash
-apt update && apt install bzip2 -y && wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/install.sh && chmod +x install.sh && ./install.sh
+apt update && apt install bzip2 -y && wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 ### Konfigurasi Saat Instalasi
 Saat script berjalan, Anda akan diminta memasukkan:
@@ -150,5 +150,5 @@ Jika Anda melihat log seperti:
 Untuk menghapus ZiVPN, API, Bot, dan semua konfigurasi:
 
 ```bash
-wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/uninstall.sh && chmod +x uninstall.sh && ./uninstall.sh
+wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/uninstall.sh && chmod +x uninstall.sh && ./uninstall.sh
 ```

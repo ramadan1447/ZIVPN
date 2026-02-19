@@ -108,7 +108,7 @@ echo "$api_key" > /etc/zivpn/apikey
 # CONFIG
 # =========================
 run_silent "Configuring" \
-"wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/config.json -O /etc/zivpn/config.json"
+"wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/config.json -O /etc/zivpn/config.json"
 
 # =========================
 # SSL
@@ -146,8 +146,8 @@ EOF
 mkdir -p /etc/zivpn/api
 
 run_silent "Setting up API" \
-"wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/zivpn-api.go -O /etc/zivpn/api/zivpn-api.go && \
- wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/go.mod -O /etc/zivpn/api/go.mod"
+"wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/zivpn-api.go -O /etc/zivpn/api/zivpn-api.go && \
+ wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/go.mod -O /etc/zivpn/api/go.mod"
 
 cd /etc/zivpn/api
 if go build -o zivpn-api zivpn-api.go &>/dev/null; then
@@ -185,7 +185,7 @@ if [[ -n "$bot_token" && -n "$admin_id" ]]; then
   echo "{\"bot_token\":\"$bot_token\",\"admin_id\":$admin_id}" > /etc/zivpn/bot-config.json
 
   run_silent "Downloading Bot" \
-  "wget -q https://raw.githubusercontent.com/ramadhan144/UDP-PROJECT/main/zivpn-bot.go -O /etc/zivpn/api/zivpn-bot.go"
+  "wget -q https://raw.githubusercontent.com/ramadan1447/ZIVPN/main/zivpn-bot.go -O /etc/zivpn/api/zivpn-bot.go"
 
   cd /etc/zivpn/api
   go get github.com/go-telegram-bot-api/telegram-bot-api/v5 &>/dev/null
